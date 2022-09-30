@@ -1,0 +1,103 @@
+@media screen and (max-width :800px) {
+
+
+    nav .container-inner {
+        display: none;
+    }
+
+    nav .container {
+        flex-direction: row;
+    }
+
+    header {
+        max-height: 1000px;
+        min-height: 800px;
+        background-size: 80%, cover, 100% 100%;
+        background-position: 80% 20%, 100%, 100% 20%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .search {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width :800px) {
+    .menu form {
+        display: none;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .menu {
+        opacity: 0;
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width :400px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 6em;
+    }
+
+
+
+}
+
+@media screen and (min-width :400px) {
+
+
+    html {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 7em;
+    }
+
+
+}
+
+@media screen and (min-width :1100px) {
+
+
+    header {
+
+        
+       
+        background-image: url('../image/main-union.svg'), url('../image/background_orange.svg'), url('../image/background_porple.svg');
+        background-size: 50%, cover, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 90% 20%, 100%, 0% top;
+  }
+
+
+}
+@media screen and (min-width :1000px) {
+
+
+    header {
+
+        
+        min-height: 800px;
+        background-image: url('../image/main-union.svg'), url('../image/background_orange.svg'), url('../image/background_porple.svg');
+        background-size: 30%, cover, 69% 100%;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 90% 20%, 100%, 0% -200px;
+  }
+
+
+}

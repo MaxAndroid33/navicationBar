@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+header {
+   
+    
+    min-height: 400px;
+    background-image:  url('../image/main-union.svg') ,url('../image/background_orange.svg'), url('../image/background_porple.svg') ;
+    background-size:  35% , cover,50% 80% ;
+    background-repeat: no-repeat, no-repeat ,no-repeat;
+    background-position: 90% 20%  ,100%,0%  top ;
+    
+   
+    
+   
+
+}
+
+
+
+main {
+    padding: 2em;
+    background: #111;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 27px;
+    color: white;
+}
+
+.container,
+.container-inner {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.container-inner {
+    max-width: 100%;
+    margin-left: 80px;
+    font-size: 19px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    z-index: 9;
+    transition: 0.7s;
+    color: #fff;
+}
+.brand{
+    font-size: 1.5em;
+}
+nav .container-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+nav .container ul{
+    width: 100%;
+    margin:0 1em;
+}
+nav .container ul:nth-child(2){
+    text-align: right;
+}
+nav .container ul li{
+    display: inline-block;
+    margin: 0 0.7em;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.3s;
+    font-weight: 600;
+    color: #fff;
+}
+
+.search{
+
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 5px 5px 5px 20px;
+    border-color: white;
+}
+/* Animation */
+nav a:hover{
+    color: #FF416C;   
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid ;
+    transform: translateX(20%);
+    -webkit-transform:translateX(-20%);
+    -moz-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    border-radius: 7px;
+    padding-bottom: 3px;
+}
+.input-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+form input,
+form button{
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+
+form button{
+cursor: pointer;
+}
+form input::placeholder{
+    color: #fff;
+}
+form input:focus{
+    outline: none;
+}
+
+nav .fa-bars{
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: right;
+}
+
+
+nav .fa-bars:hover{
+    color: #FF416C;
+}
+
+.menu{
+    background: gold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    text-align: center;
+    font-size: 1.3em;
+    height:2px;
+    opacity: 0;
+    transition: 0.7s cubic-bezier(.74 ,-0.03,.83,.67);  
+    
+}
+
+.logo{
+    width: 6em;
+}
+
+.menu ul ,.menu form{
+
+    margin: 1em auto;
+}
+
+.menu li{
+    margin: 1em 0;
+}
+
+.menu > div{
+    z-index: 20;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 6em 1em 3em  1em;
+    height: 100%;
+    overflow: hidden;
+    
+    
+}
+
+.menu > div::-webkit-scrollbar{
+display: none;
+
+}
+
+.menu .social-media{
+    margin: 2em 0;
+}
+.social-media li{
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+
+/* Classes for javascript */
+
+.menu-open{
+
+    height: 100vh;
+    opacity: 1;
+
+}
+
+.navbar-active{
+    background: #111;
+    padding: 1em;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
