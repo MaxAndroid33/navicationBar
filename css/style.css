@@ -17,7 +17,7 @@ ul {
 header {
    
     
-    min-height: 400px;
+    min-height: 800px;
     background-image:  url('../image/main-union.svg') ,url('../image/background_orange.svg'), url('../image/background_porple.svg') ;
     background-size:  35% , cover,50% 80% ;
     background-repeat: no-repeat, no-repeat ,no-repeat;
@@ -52,7 +52,7 @@ main p {
     max-width: 1440px;
     position: relative;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -61,7 +61,7 @@ main p {
 
 .container-inner {
     max-width: 100%;
-    margin-left: 80px;
+    
     font-size: 19px;
 }
 
@@ -88,12 +88,13 @@ nav .container ul{
     width: 100%;
     margin:0 1em;
 }
-nav .container ul:nth-child(2){
+nav .container ul:nth-child(3){
     text-align: right;
 }
 nav .container ul li{
     display: inline-block;
-    margin: 0 0.7em;
+    margin: 0 0 0 10%;
+    
 }
 
 nav a{

@@ -77,7 +77,7 @@
     header {
 
         
-       
+       min-height: 800px;
         background-image: url('../image/main-union.svg'), url('../image/background_orange.svg'), url('../image/background_porple.svg');
         background-size: 50%, cover, cover;
         background-repeat: no-repeat, no-repeat, no-repeat;
