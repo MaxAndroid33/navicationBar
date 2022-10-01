@@ -33,7 +33,7 @@ header {
 
 main {
     padding: 2em;
-    background: #111;
+    background: whitesmoke;
 }
 
 main p {
@@ -164,7 +164,7 @@ nav .fa-bars:hover{
 }
 
 .menu{
-    background: gold;
+    background: orange;
     position: absolute;
     top: 0;
     right: 0;
@@ -227,7 +227,7 @@ display: none;
 }
 
 .navbar-active{
-    background: #111;
+    background:purple;
     padding: 1em;
     z-index: 100;
 }
