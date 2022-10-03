@@ -173,6 +173,9 @@ button {
     cursor: pointer;
     transition: 0.7s cubic-bezier(.74 ,-0.03,.83,.67);  
 }
+.boxmodel-services  .image-continer .right{
+   left: 0;
+}
 .boxmodel-services .image-continer:hover {
     transform: rotate(10deg);
 }
