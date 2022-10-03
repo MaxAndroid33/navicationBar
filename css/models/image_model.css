@@ -146,13 +146,12 @@ button {
 
 .boxmodel-services {
     display: block;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30) ,0 11px 8px rgba(0, 0, 0, 0.22);
-    transition: 0.3s cubic-bezier(.74 ,-0.03,.83,.67);   
+    box-shadow: 0 3px 8px rgb(0 0 0 / 7%), 0 0px 9px rgb(0 0 0 / 1%);
+    transition: 0.3s cubic-bezier(.74 ,-0.03,.83,.67);
     position: relative;
-    margin: 20px 20px 20px 20px;
-    padding: 20px;
+    margin: 166px 20px 20px 20px;
+    padding: 19px;
     box-sizing: border-box;
-    /* border: 1px solid; */
     min-height: 340px;
     height: auto;
     transition-duration: 0.5s;
