@@ -4,6 +4,33 @@ body {
 
 }
 
+html {
+    font-family: var(--fontfamily);
+    ;
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--red-orange-color-wheel);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ultramarine-blue);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -66,6 +93,7 @@ main p {
 }
 
 nav{
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -113,18 +141,19 @@ nav a{
     border-color: white;
 }
 /* Animation */
-nav a:hover{
-    color: #FF416C;   
+nav  a:hover{
+    color: #FF416C;
+    
 }
-
+nav ul li a{
+    
+    
+}
 nav ul li a:hover{
+    cursor: pointer;
     border-bottom: 3px solid ;
-    transform: translateX(20%);
-    -webkit-transform:translateX(-20%);
-    -moz-transform: translateX(-20%);
-    -ms-transform: translateX(-20%);
     border-radius: 7px;
-    padding-bottom: 3px;
+   
 }
 .input-wrap{
     display: flex;
@@ -164,7 +193,7 @@ nav .fa-bars:hover{
 }
 
 .menu{
-    background: orange;
+    background: #b07cff;
     position: absolute;
     top: 0;
     right: 0;
@@ -227,10 +256,11 @@ display: none;
 }
 
 .navbar-active{
-    background:purple;
+    background:#b07cff;
     padding: 1em;
     z-index: 100;
 }
+
 
 
 
