@@ -145,7 +145,8 @@ button {
 
 
 .boxmodel-services {
-    display: block;
+   
+    display: inline-block;
     box-shadow: 0 3px 8px rgb(0 0 0 / 7%), 0 0px 9px rgb(0 0 0 / 1%);
     transition: 0.3s cubic-bezier(.74 ,-0.03,.83,.67);
     position: relative;
@@ -173,10 +174,21 @@ button {
     cursor: pointer;
     transition: 0.7s cubic-bezier(.74 ,-0.03,.83,.67);  
 }
-.boxmodel-services  .image-continer .right{
-   left: 0;
+.boxmodel-services > .image-continer-right {
+    float: left;
+    position: absolute;
+    display: block;
+    height: auto;
+    left: 0;
+    width: 34%;
+    min-height: 100%;
+    height: auto;
+    max-width: 100%;       /* for full screen */ 
+    cursor: pointer;
+    transition: 0.7s cubic-bezier(.74 ,-0.03,.83,.67);  
 }
-.boxmodel-services .image-continer:hover {
+
+.boxmodel-services .image-continer:hover ,.boxmodel-services .image-continer .right:hover {
     transform: rotate(10deg);
 }
 
@@ -184,9 +196,8 @@ button {
 
 
 .boxmodel-services > div {
-    position: relative;
+   
     
-    /* border: 2px solid red; */
     transition: 0.6s cubic-bezier(.74 ,-0.03,.83,.67);      
     height: 20%;
     max-height: 100%;
@@ -198,7 +209,8 @@ button {
 
 }
 
-.boxmodel-services .image-content > p {
+
+.boxmodel-services .image-content >p ,.boxmodel-services .image-content-right  > p {
     
     
     transition: 0.3s cubic-bezier(.74 ,-0.03,.83,.67);   
@@ -211,20 +223,38 @@ button {
 
 
 }
-
+.boxmodel-services .image-content{
+    
+}
+ .image-content-right {
+   
+float: right;
+right: 0;
+    
+   
+}
 .boxmodel-services .image-content h1 {
     
-    text-align: center;
-    font-size: 2.1em;
+    text-align: left;
+    font-size: 1.5em;
     color: black;
-    font-family: sans-serif;
+    
+    
+
+}
+.boxmodel-services .image-content-right h1 {
+    
+    text-align: right;
+    font-size: 1.5em;
+    color: black;
+    
     
 
 }
 
 
 
-.boxmodel-services .image-content button {
+.boxmodel-services .image-content button, .boxmodel-services .image-content-right button {
     
    
     border: .0625rem solid transparent;
@@ -239,7 +269,7 @@ button {
 
 }
 
-.view-service-btn {
+.view-service-btn , .view-service-btn-right {
     
     transition: 0.3s cubic-bezier(.74 ,-0.03,.83,.67);   
     margin-top: 20px;
@@ -253,7 +283,7 @@ button {
     color: #fff;
     font-family: Nunito,sans-serif;
 }
- .image-content button:hover{
+ .image-content button:hover ,.view-service-btn-right button:hover{
     text-shadow: #111;
     background-color: #FF416C;
     transform: translateY(-10%);

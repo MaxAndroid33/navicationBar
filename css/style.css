@@ -138,7 +138,8 @@ nav a{
     border: 1px solid;
     border-radius: 20px;
     padding: 5px 5px 5px 20px;
-    border-color: white;
+    border-color:   hsl(15, 100%, 55%);;
+
 }
 /* Animation */
 nav  a:hover{
@@ -171,7 +172,7 @@ form button{
 cursor: pointer;
 }
 form input::placeholder{
-    color: #fff;
+    color: rgb(255, 191, 164);
 }
 form input:focus{
     outline: none;
@@ -182,15 +183,19 @@ nav .fa-bars{
     cursor: pointer;
     transition: 0.3s;
     text-align: right;
+    color: hsl(15, 100%, 55%);
 }
-
+nav .fa-search{
+    color: hsl(15, 100%, 55%);
+}
 
 nav .fa-bars:hover{
     color: #FF416C;
 }
 
 .menu{
-    background: hsl(15, 100%, 70%);;
+    backdrop-filter: blur(6px);
+    background: hsl(293, 11%, 55%);
     color:white !important;
     position: absolute;
     top: 0;
@@ -268,7 +273,9 @@ display: none;
 }
 
 
-
+.navbar-active a >.fa-search {
+    color: hsl(15, 100%, 55%);
+}
 
 
 
