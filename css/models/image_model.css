@@ -188,7 +188,7 @@ button {
     transition: 0.7s cubic-bezier(.74 ,-0.03,.83,.67);  
 }
 
-.boxmodel-services .image-continer:hover ,.boxmodel-services .image-continer .right:hover {
+.boxmodel-services .image-continer:hover ,.boxmodel-services .image-continer-right:hover {
     transform: rotate(10deg);
 }
 
@@ -283,8 +283,8 @@ right: 0;
     color: #fff;
     font-family: Nunito,sans-serif;
 }
- .image-content button:hover ,.view-service-btn-right button:hover{
+ .image-content button:hover ,.image-content-right button:hover{
     text-shadow: #111;
-    background-color: #FF416C;
+    background-color: #6016c2;
     transform: translateY(-10%);
 }
