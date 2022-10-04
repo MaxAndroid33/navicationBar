@@ -1,0 +1,27 @@
+name: Update Articles
+
+#### Thing to notice 1 ####
+on:
+  schedule:
+    - cron:  '30 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run script to get articles from dev.to
+        #### Thing to notice 2 ####
+        run: |
+          ./scripts/post_files_from_GET_json.sh
+
+      - name: Commit to the repo
+        run: |
+          git config --global user.name 'Bruno Drugowick'
+          git config --global user.email 'brunodrugowick@users.noreply.github.com'
+          git add .
+          git commit -am "Update articles list"
+          git push
